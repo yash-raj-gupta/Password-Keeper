@@ -21,10 +21,17 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { MainComponent } from './main/main.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignInComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [
     provideClientHydration(),
